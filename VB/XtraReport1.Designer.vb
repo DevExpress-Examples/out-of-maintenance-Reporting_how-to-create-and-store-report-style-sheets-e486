@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace DynamicStyleSheet
+﻿Namespace DynamicStyleSheet
 	Partial Public Class XtraReport1
 		''' <summary>
 		''' Required designer variable.

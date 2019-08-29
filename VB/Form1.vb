@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraReports.UI
 ' ...
@@ -7,6 +6,7 @@ Imports DevExpress.XtraReports.UI
 Namespace DynamicStyleSheet
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
@@ -30,7 +30,7 @@ Namespace DynamicStyleSheet
 			report.CreateDocument()
 		End Sub
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 			report = New XtraReport1()
 			printControl1.PrintingSystem = report.PrintingSystem
 

@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace DynamicStyleSheet
+﻿Namespace DynamicStyleSheet
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -48,7 +46,8 @@ Namespace DynamicStyleSheet
 			Me.buttonPreview.TabIndex = 2
 			Me.buttonPreview.Text = "Preview"
 			Me.buttonPreview.UseVisualStyleBackColor = True
-'			Me.buttonPreview.Click += New System.EventHandler(Me.buttonPreview_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.buttonPreview.Click += new System.EventHandler(this.buttonPreview_Click);
 			' 
 			' printControl1
 			' 
@@ -70,7 +69,8 @@ Namespace DynamicStyleSheet
 			Me.button1.TabIndex = 4
 			Me.button1.Text = "Save the Current Style Sheet"
 			Me.button1.UseVisualStyleBackColor = True
-'			Me.button1.Click += New System.EventHandler(Me.button1_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button1.Click += new System.EventHandler(this.button1_Click);
 			' 
 			' Form1
 			' 
@@ -83,7 +83,8 @@ Namespace DynamicStyleSheet
 			Me.Controls.Add(Me.comboBox1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
 			Me.ResumeLayout(False)
 
 		End Sub

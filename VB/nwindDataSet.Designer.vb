@@ -8,19 +8,21 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-'INSTANT VB TODO TASK: There is no equivalent to #pragma directives in VB.NET:
-'#pragma warning disable 1591
+#Disable Warning BC1591
 
-
-Imports Microsoft.VisualBasic
-Imports System
 Namespace DynamicStyleSheet
 
 
 	''' <summary>
 	'''Represents a strongly typed in-memory cache of data.
 	'''</summary>
-	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.Serializable(), Global.System.ComponentModel.DesignerCategoryAttribute("code"), Global.System.ComponentModel.ToolboxItem(True), Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"), Global.System.Xml.Serialization.XmlRootAttribute("nwindDataSet"), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")> _
+	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+	<Global.System.Serializable()>
+	<Global.System.ComponentModel.DesignerCategoryAttribute("code")>
+	<Global.System.ComponentModel.ToolboxItem(True)>
+	<Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")>
+	<Global.System.Xml.Serialization.XmlRootAttribute("nwindDataSet")>
+	<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>
 	Partial Public Class nwindDataSet
 		Inherits System.Data.DataSet
 
@@ -28,7 +30,7 @@ Namespace DynamicStyleSheet
 
 		Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Sub New()
 			Me.BeginInit()
 			Me.InitClass()
@@ -38,7 +40,7 @@ Namespace DynamicStyleSheet
 			Me.EndInit()
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
 			MyBase.New(info, context, False)
 			If (Me.IsBinarySerialized(info, context) = True) Then
@@ -72,14 +74,18 @@ Namespace DynamicStyleSheet
 			AddHandler Me.Relations.CollectionChanged, schemaChangedHandler
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Browsable(False), Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Browsable(False)>
+		<Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>
 		Public ReadOnly Property Products() As ProductsDataTable
 			Get
 				Return Me.tableProducts
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.BrowsableAttribute(True), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.BrowsableAttribute(True)>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)>
 		Public Overrides Property SchemaSerializationMode() As Global.System.Data.SchemaSerializationMode
 			Get
 				Return Me._schemaSerializationMode
@@ -89,28 +95,30 @@ Namespace DynamicStyleSheet
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)>
 		Public Shadows ReadOnly Property Tables() As Global.System.Data.DataTableCollection
 			Get
 				Return MyBase.Tables
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)>
 		Public Shadows ReadOnly Property Relations() As Global.System.Data.DataRelationCollection
 			Get
 				Return MyBase.Relations
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Sub InitializeDerivedDataSet()
 			Me.BeginInit()
 			Me.InitClass()
 			Me.EndInit()
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Overrides Function Clone() As Global.System.Data.DataSet
 			Dim cln As nwindDataSet = (CType(MyBase.Clone(), nwindDataSet))
 			cln.InitVars()
@@ -118,17 +126,17 @@ Namespace DynamicStyleSheet
 			Return cln
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function ShouldSerializeTables() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function ShouldSerializeRelations() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Sub ReadXmlSerializable(ByVal reader As Global.System.Xml.XmlReader)
 			If (Me.DetermineSchemaSerializationMode(reader) = Global.System.Data.SchemaSerializationMode.IncludeSchema) Then
 				Me.Reset()
@@ -151,7 +159,7 @@ Namespace DynamicStyleSheet
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function GetSchemaSerializable() As Global.System.Xml.Schema.XmlSchema
 			Dim stream As New Global.System.IO.MemoryStream()
 			Me.WriteXmlSchema(New Global.System.Xml.XmlTextWriter(stream, Nothing))
@@ -159,12 +167,12 @@ Namespace DynamicStyleSheet
 			Return Global.System.Xml.Schema.XmlSchema.Read(New Global.System.Xml.XmlTextReader(stream), Nothing)
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Sub InitVars()
 			Me.InitVars(True)
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Sub InitVars(ByVal initTable As Boolean)
 			Me.tableProducts = (CType(MyBase.Tables("Products"), ProductsDataTable))
 			If (initTable = True) Then
@@ -174,7 +182,7 @@ Namespace DynamicStyleSheet
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitClass()
 			Me.DataSetName = "nwindDataSet"
 			Me.Prefix = ""
@@ -185,19 +193,19 @@ Namespace DynamicStyleSheet
 			MyBase.Tables.Add(Me.tableProducts)
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Function ShouldSerializeProducts() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub SchemaChanged(ByVal sender As Object, ByVal e As Global.System.ComponentModel.CollectionChangeEventArgs)
 			If (e.Action = Global.System.ComponentModel.CollectionChangeAction.Remove) Then
 				Me.InitVars()
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
 			Dim ds As New nwindDataSet()
 			Dim type As New Global.System.Xml.Schema.XmlSchemaComplexType()
@@ -247,7 +255,9 @@ Namespace DynamicStyleSheet
 		''' <summary>
 		'''Represents the strongly named DataTable class.
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.Serializable(), Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+		<Global.System.Serializable()>
+		<Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>
 		Partial Public Class ProductsDataTable
 			Inherits System.Data.DataTable
 			Implements System.Collections.IEnumerable
@@ -274,7 +284,7 @@ Namespace DynamicStyleSheet
 
 			Private columnEAN13 As Global.System.Data.DataColumn
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub New()
 				Me.TableName = "Products"
 				Me.BeginInit()
@@ -282,7 +292,7 @@ Namespace DynamicStyleSheet
 				Me.EndInit()
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub New(ByVal table As Global.System.Data.DataTable)
 				Me.TableName = table.TableName
 				If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
@@ -298,97 +308,98 @@ Namespace DynamicStyleSheet
 				Me.MinimumCapacity = table.MinimumCapacity
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
 				MyBase.New(info, context)
 				Me.InitVars()
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ProductIDColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnProductID
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ProductNameColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnProductName
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property SupplierIDColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnSupplierID
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property CategoryIDColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnCategoryID
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property QuantityPerUnitColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnQuantityPerUnit
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property UnitPriceColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnUnitPrice
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property UnitsInStockColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnUnitsInStock
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property UnitsOnOrderColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnUnitsOnOrder
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ReorderLevelColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnReorderLevel
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property DiscontinuedColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnDiscontinued
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property EAN13Column() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnEAN13
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Browsable(False)> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+			<Global.System.ComponentModel.Browsable(False)>
 			Public ReadOnly Property Count() As Integer
 				Get
 					Return Me.Rows.Count
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Default Public ReadOnly Property Item(ByVal index As Integer) As ProductsRow
 				Get
 					Return (CType(Me.Rows(index), ProductsRow))
@@ -403,12 +414,12 @@ Namespace DynamicStyleSheet
 
 			Public Event ProductsRowDeleted As ProductsRowChangeEventHandler
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub AddProductsRow(ByVal row As ProductsRow)
 				Me.Rows.Add(row)
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function AddProductsRow(ByVal ProductName As String, ByVal SupplierID As Integer, ByVal CategoryID As Integer, ByVal QuantityPerUnit As String, ByVal UnitPrice As Decimal, ByVal UnitsInStock As Short, ByVal UnitsOnOrder As Short, ByVal ReorderLevel As Short, ByVal Discontinued As Boolean, ByVal EAN13 As String) As ProductsRow
 				Dim rowProductsRow As ProductsRow = (CType(Me.NewRow(), ProductsRow))
 				Dim columnValuesArray() As Object = { Nothing, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued, EAN13}
@@ -417,29 +428,29 @@ Namespace DynamicStyleSheet
 				Return rowProductsRow
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function FindByProductID(ByVal ProductID As Integer) As ProductsRow
 				Return (CType(Me.Rows.Find(New Object() { ProductID}), ProductsRow))
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Overridable Function GetEnumerator() As Global.System.Collections.IEnumerator Implements System.Collections.IEnumerable.GetEnumerator
 				Return Me.Rows.GetEnumerator()
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Overrides Function Clone() As Global.System.Data.DataTable
 				Dim cln As ProductsDataTable = (CType(MyBase.Clone(), ProductsDataTable))
 				cln.InitVars()
 				Return cln
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
 				Return New ProductsDataTable()
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub InitVars()
 				Me.columnProductID = MyBase.Columns("ProductID")
 				Me.columnProductName = MyBase.Columns("ProductName")
@@ -454,7 +465,7 @@ Namespace DynamicStyleSheet
 				Me.columnEAN13 = MyBase.Columns("EAN13")
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Private Sub InitClass()
 				Me.columnProductID = New Global.System.Data.DataColumn("ProductID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
 				MyBase.Columns.Add(Me.columnProductID)
@@ -487,59 +498,51 @@ Namespace DynamicStyleSheet
 				Me.columnEAN13.MaxLength = 12
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function NewProductsRow() As ProductsRow
 				Return (CType(Me.NewRow(), ProductsRow))
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
 				Return New ProductsRow(builder)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function GetRowType() As Global.System.Type
 				Return GetType(ProductsRow)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowChanged(e)
-				If (Me.ProductsRowChangedEvent IsNot Nothing) Then
-					RaiseEvent ProductsRowChanged(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
-				End If
+				RaiseEvent ProductsRowChanged(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowChanging(e)
-				If (Me.ProductsRowChangingEvent IsNot Nothing) Then
-					RaiseEvent ProductsRowChanging(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
-				End If
+				RaiseEvent ProductsRowChanging(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowDeleted(e)
-				If (Me.ProductsRowDeletedEvent IsNot Nothing) Then
-					RaiseEvent ProductsRowDeleted(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
-				End If
+				RaiseEvent ProductsRowDeleted(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowDeleting(e)
-				If (Me.ProductsRowDeletingEvent IsNot Nothing) Then
-					RaiseEvent ProductsRowDeleting(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
-				End If
+				RaiseEvent ProductsRowDeleting(Me, New ProductsRowChangeEvent((CType(e.Row, ProductsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub RemoveProductsRow(ByVal row As ProductsRow)
 				Me.Rows.Remove(row)
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
 				Dim type As New Global.System.Xml.Schema.XmlSchemaComplexType()
 				Dim sequence As New Global.System.Xml.Schema.XmlSchemaSequence()
@@ -604,29 +607,29 @@ Namespace DynamicStyleSheet
 		''' <summary>
 		'''Represents strongly named DataRow class.
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
 		Partial Public Class ProductsRow
 			Inherits System.Data.DataRow
 
 			Private tableProducts As ProductsDataTable
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
 				MyBase.New(rb)
 				Me.tableProducts = (CType(Me.Table, ProductsDataTable))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property ProductID() As Integer
 				Get
-					Return (CInt(Fix(Me(Me.tableProducts.ProductIDColumn))))
+					Return (CInt(Me(Me.tableProducts.ProductIDColumn)))
 				End Get
 				Set(ByVal value As Integer)
 					Me(Me.tableProducts.ProductIDColumn) = value
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property ProductName() As String
 				Get
 					Try
@@ -640,11 +643,11 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property SupplierID() As Integer
 				Get
 					Try
-						Return (CInt(Fix(Me(Me.tableProducts.SupplierIDColumn))))
+						Return (CInt(Me(Me.tableProducts.SupplierIDColumn)))
 					Catch e As Global.System.InvalidCastException
 						Throw New Global.System.Data.StrongTypingException("The value for column 'SupplierID' in table 'Products' is DBNull.", e)
 					End Try
@@ -654,11 +657,11 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property CategoryID() As Integer
 				Get
 					Try
-						Return (CInt(Fix(Me(Me.tableProducts.CategoryIDColumn))))
+						Return (CInt(Me(Me.tableProducts.CategoryIDColumn)))
 					Catch e As Global.System.InvalidCastException
 						Throw New Global.System.Data.StrongTypingException("The value for column 'CategoryID' in table 'Products' is DBNull.", e)
 					End Try
@@ -668,7 +671,7 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property QuantityPerUnit() As String
 				Get
 					Try
@@ -682,7 +685,7 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property UnitPrice() As Decimal
 				Get
 					Try
@@ -696,11 +699,11 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property UnitsInStock() As Short
 				Get
 					Try
-						Return (CShort(Fix(Me(Me.tableProducts.UnitsInStockColumn))))
+						Return (CShort(Me(Me.tableProducts.UnitsInStockColumn)))
 					Catch e As Global.System.InvalidCastException
 						Throw New Global.System.Data.StrongTypingException("The value for column 'UnitsInStock' in table 'Products' is DBNull.", e)
 					End Try
@@ -710,11 +713,11 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property UnitsOnOrder() As Short
 				Get
 					Try
-						Return (CShort(Fix(Me(Me.tableProducts.UnitsOnOrderColumn))))
+						Return (CShort(Me(Me.tableProducts.UnitsOnOrderColumn)))
 					Catch e As Global.System.InvalidCastException
 						Throw New Global.System.Data.StrongTypingException("The value for column 'UnitsOnOrder' in table 'Products' is DBNull.", e)
 					End Try
@@ -724,11 +727,11 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property ReorderLevel() As Short
 				Get
 					Try
-						Return (CShort(Fix(Me(Me.tableProducts.ReorderLevelColumn))))
+						Return (CShort(Me(Me.tableProducts.ReorderLevelColumn)))
 					Catch e As Global.System.InvalidCastException
 						Throw New Global.System.Data.StrongTypingException("The value for column 'ReorderLevel' in table 'Products' is DBNull.", e)
 					End Try
@@ -738,7 +741,7 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property Discontinued() As Boolean
 				Get
 					Try
@@ -752,7 +755,7 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property EAN13() As String
 				Get
 					Try
@@ -766,102 +769,102 @@ Namespace DynamicStyleSheet
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsProductNameNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.ProductNameColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetProductNameNull()
 				Me(Me.tableProducts.ProductNameColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsSupplierIDNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.SupplierIDColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetSupplierIDNull()
 				Me(Me.tableProducts.SupplierIDColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsCategoryIDNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.CategoryIDColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetCategoryIDNull()
 				Me(Me.tableProducts.CategoryIDColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsQuantityPerUnitNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.QuantityPerUnitColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetQuantityPerUnitNull()
 				Me(Me.tableProducts.QuantityPerUnitColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsUnitPriceNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.UnitPriceColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetUnitPriceNull()
 				Me(Me.tableProducts.UnitPriceColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsUnitsInStockNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.UnitsInStockColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetUnitsInStockNull()
 				Me(Me.tableProducts.UnitsInStockColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsUnitsOnOrderNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.UnitsOnOrderColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetUnitsOnOrderNull()
 				Me(Me.tableProducts.UnitsOnOrderColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsReorderLevelNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.ReorderLevelColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetReorderLevelNull()
 				Me(Me.tableProducts.ReorderLevelColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsDiscontinuedNull() As Boolean
 				Return Me.IsNull(Me.tableProducts.DiscontinuedColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetDiscontinuedNull()
 				Me(Me.tableProducts.DiscontinuedColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsEAN13Null() As Boolean
 				Return Me.IsNull(Me.tableProducts.EAN13Column)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetEAN13Null()
 				Me(Me.tableProducts.EAN13Column) = Global.System.Convert.DBNull
 			End Sub
@@ -870,7 +873,7 @@ Namespace DynamicStyleSheet
 		''' <summary>
 		'''Row event argument class
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
 		Public Class ProductsRowChangeEvent
 			Inherits System.EventArgs
 
@@ -878,20 +881,20 @@ Namespace DynamicStyleSheet
 
 			Private eventAction As Global.System.Data.DataRowAction
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub New(ByVal row As ProductsRow, ByVal action As Global.System.Data.DataRowAction)
 				Me.eventRow = row
 				Me.eventAction = action
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property Row() As ProductsRow
 				Get
 					Return Me.eventRow
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property Action() As Global.System.Data.DataRowAction
 				Get
 					Return Me.eventAction
@@ -906,7 +909,12 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 	''' <summary>
 	'''Represents the connection and commands used to retrieve and save data.
 	'''</summary>
-	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.ComponentModel.DesignerCategoryAttribute("code"), Global.System.ComponentModel.ToolboxItem(True), Global.System.ComponentModel.DataObjectAttribute(True), Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+	<Global.System.ComponentModel.DesignerCategoryAttribute("code")>
+	<Global.System.ComponentModel.ToolboxItem(True)>
+	<Global.System.ComponentModel.DataObjectAttribute(True)>
+	<Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")>
+	<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 	Partial Public Class ProductsTableAdapter
 		Inherits System.ComponentModel.Component
 
@@ -918,12 +926,12 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 
 		Private _clearBeforeFill As Boolean
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Sub New()
 			Me.ClearBeforeFill = True
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private ReadOnly Property Adapter() As Global.System.Data.OleDb.OleDbDataAdapter
 			Get
 				If (Me._adapter Is Nothing) Then
@@ -933,7 +941,7 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Property Connection() As Global.System.Data.OleDb.OleDbConnection
 			Get
 				If (Me._connection Is Nothing) Then
@@ -962,7 +970,7 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected ReadOnly Property CommandCollection() As Global.System.Data.OleDb.OleDbCommand()
 			Get
 				If (Me._commandCollection Is Nothing) Then
@@ -972,7 +980,7 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Property ClearBeforeFill() As Boolean
 			Get
 				Return Me._clearBeforeFill
@@ -982,7 +990,7 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitAdapter()
 			Me._adapter = New Global.System.Data.OleDb.OleDbDataAdapter()
 			Dim tableMapping As New Global.System.Data.Common.DataTableMapping()
@@ -1027,7 +1035,9 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_EAN13", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, (CByte(0)), (CByte(0)), "EAN13", Global.System.Data.DataRowVersion.Original, False, Nothing))
 			Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
 			Me._adapter.InsertCommand.Connection = Me.Connection
-			Me._adapter.InsertCommand.CommandText = "INSERT INTO `Products` (`ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUn" & "it`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, `Discontinued`" & ", `EAN13`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+			Me._adapter.InsertCommand.CommandText = "INSERT INTO `Products` (`ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUn" &
+				"it`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, `Discontinued`" &
+				", `EAN13`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 			Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
 			Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("ProductName", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, (CByte(0)), (CByte(0)), "ProductName", Global.System.Data.DataRowVersion.Current, False, Nothing))
 			Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("SupplierID", Global.System.Data.OleDb.OleDbType.Integer, 0, Global.System.Data.ParameterDirection.Input, (CByte(0)), (CByte(0)), "SupplierID", Global.System.Data.DataRowVersion.Current, False, Nothing))
@@ -1076,22 +1086,25 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_EAN13", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, (CByte(0)), (CByte(0)), "EAN13", Global.System.Data.DataRowVersion.Original, False, Nothing))
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitConnection()
 			Me._connection = New Global.System.Data.OleDb.OleDbConnection()
 			Me._connection.ConnectionString = My.Settings.Default.nwindConnectionString1
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitCommandCollection()
 			Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0){}
 			Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
 			Me._commandCollection(0).Connection = Me.Connection
-			Me._commandCollection(0).CommandText = "SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice" & ", UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued, EAN13 FROM Products"
+			Me._commandCollection(0).CommandText = "SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice" &
+				", UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued, EAN13 FROM Products"
 			Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)>
 		Public Overridable Function Fill(ByVal dataTable As nwindDataSet.ProductsDataTable) As Integer
 			Me.Adapter.SelectCommand = Me.CommandCollection(0)
 			If (Me.ClearBeforeFill = True) Then
@@ -1101,7 +1114,9 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			Return returnValue
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Select, True)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Select, True)>
 		Public Overridable Function GetData() As nwindDataSet.ProductsDataTable
 			Me.Adapter.SelectCommand = Me.CommandCollection(0)
 			Dim dataTable As New nwindDataSet.ProductsDataTable()
@@ -1109,29 +1124,35 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			Return dataTable
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataTable As nwindDataSet.ProductsDataTable) As Integer
 			Return Me.Adapter.Update(dataTable)
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataSet As nwindDataSet) As Integer
 			Return Me.Adapter.Update(dataSet, "Products")
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
 			Return Me.Adapter.Update(New Global.System.Data.DataRow() { dataRow})
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 		Public Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
 			Return Me.Adapter.Update(dataRows)
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
-		Public Overridable Function Delete(ByVal Original_ProductID As Integer, ByVal Original_ProductName As String, ByVal Original_SupplierID As Global.System.Nullable(Of Integer), ByVal Original_CategoryID As Global.System.Nullable(Of Integer), ByVal Original_QuantityPerUnit As String, ByVal Original_UnitPrice As Global.System.Nullable(Of Decimal), ByVal Original_UnitsInStock As Global.System.Nullable(Of Short), ByVal Original_UnitsOnOrder As Global.System.Nullable(Of Short), ByVal Original_ReorderLevel As Global.System.Nullable(Of Short), ByVal Original_Discontinued As Boolean, ByVal Original_EAN13 As String) As Integer
-			Me.Adapter.DeleteCommand.Parameters(0).Value = (CInt(Fix(Original_ProductID)))
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)>
+		Public Overridable Function Delete(ByVal Original_ProductID As Integer, ByVal Original_ProductName As String, ByVal Original_SupplierID? As Integer, ByVal Original_CategoryID? As Integer, ByVal Original_QuantityPerUnit As String, ByVal Original_UnitPrice? As Decimal, ByVal Original_UnitsInStock? As Short, ByVal Original_UnitsOnOrder? As Short, ByVal Original_ReorderLevel? As Short, ByVal Original_Discontinued As Boolean, ByVal Original_EAN13 As String) As Integer
+			Me.Adapter.DeleteCommand.Parameters(0).Value = (CInt(Original_ProductID))
 			If (Original_ProductName Is Nothing) Then
 				Throw New Global.System.ArgumentNullException("Original_ProductName")
 			Else
@@ -1140,14 +1161,14 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End If
 			If (Original_SupplierID.HasValue = True) Then
 				Me.Adapter.DeleteCommand.Parameters(3).Value = (CObj(0))
-				Me.Adapter.DeleteCommand.Parameters(4).Value = (CInt(Fix(Original_SupplierID.Value)))
+				Me.Adapter.DeleteCommand.Parameters(4).Value = (CInt(Original_SupplierID.Value))
 			Else
 				Me.Adapter.DeleteCommand.Parameters(3).Value = (CObj(1))
 				Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
 			End If
 			If (Original_CategoryID.HasValue = True) Then
 				Me.Adapter.DeleteCommand.Parameters(5).Value = (CObj(0))
-				Me.Adapter.DeleteCommand.Parameters(6).Value = (CInt(Fix(Original_CategoryID.Value)))
+				Me.Adapter.DeleteCommand.Parameters(6).Value = (CInt(Original_CategoryID.Value))
 			Else
 				Me.Adapter.DeleteCommand.Parameters(5).Value = (CObj(1))
 				Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
@@ -1168,21 +1189,21 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End If
 			If (Original_UnitsInStock.HasValue = True) Then
 				Me.Adapter.DeleteCommand.Parameters(11).Value = (CObj(0))
-				Me.Adapter.DeleteCommand.Parameters(12).Value = (CShort(Fix(Original_UnitsInStock.Value)))
+				Me.Adapter.DeleteCommand.Parameters(12).Value = (CShort(Original_UnitsInStock.Value))
 			Else
 				Me.Adapter.DeleteCommand.Parameters(11).Value = (CObj(1))
 				Me.Adapter.DeleteCommand.Parameters(12).Value = Global.System.DBNull.Value
 			End If
 			If (Original_UnitsOnOrder.HasValue = True) Then
 				Me.Adapter.DeleteCommand.Parameters(13).Value = (CObj(0))
-				Me.Adapter.DeleteCommand.Parameters(14).Value = (CShort(Fix(Original_UnitsOnOrder.Value)))
+				Me.Adapter.DeleteCommand.Parameters(14).Value = (CShort(Original_UnitsOnOrder.Value))
 			Else
 				Me.Adapter.DeleteCommand.Parameters(13).Value = (CObj(1))
 				Me.Adapter.DeleteCommand.Parameters(14).Value = Global.System.DBNull.Value
 			End If
 			If (Original_ReorderLevel.HasValue = True) Then
 				Me.Adapter.DeleteCommand.Parameters(15).Value = (CObj(0))
-				Me.Adapter.DeleteCommand.Parameters(16).Value = (CShort(Fix(Original_ReorderLevel.Value)))
+				Me.Adapter.DeleteCommand.Parameters(16).Value = (CShort(Original_ReorderLevel.Value))
 			Else
 				Me.Adapter.DeleteCommand.Parameters(15).Value = (CObj(1))
 				Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
@@ -1210,20 +1231,22 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Try
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-		Public Overridable Function Insert(ByVal ProductName As String, ByVal SupplierID As Global.System.Nullable(Of Integer), ByVal CategoryID As Global.System.Nullable(Of Integer), ByVal QuantityPerUnit As String, ByVal UnitPrice As Global.System.Nullable(Of Decimal), ByVal UnitsInStock As Global.System.Nullable(Of Short), ByVal UnitsOnOrder As Global.System.Nullable(Of Short), ByVal ReorderLevel As Global.System.Nullable(Of Short), ByVal Discontinued As Boolean, ByVal EAN13 As String) As Integer
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)>
+		Public Overridable Function Insert(ByVal ProductName As String, ByVal SupplierID? As Integer, ByVal CategoryID? As Integer, ByVal QuantityPerUnit As String, ByVal UnitPrice? As Decimal, ByVal UnitsInStock? As Short, ByVal UnitsOnOrder? As Short, ByVal ReorderLevel? As Short, ByVal Discontinued As Boolean, ByVal EAN13 As String) As Integer
 			If (ProductName Is Nothing) Then
 				Throw New Global.System.ArgumentNullException("ProductName")
 			Else
 				Me.Adapter.InsertCommand.Parameters(0).Value = (CStr(ProductName))
 			End If
 			If (SupplierID.HasValue = True) Then
-				Me.Adapter.InsertCommand.Parameters(1).Value = (CInt(Fix(SupplierID.Value)))
+				Me.Adapter.InsertCommand.Parameters(1).Value = (CInt(SupplierID.Value))
 			Else
 				Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
 			End If
 			If (CategoryID.HasValue = True) Then
-				Me.Adapter.InsertCommand.Parameters(2).Value = (CInt(Fix(CategoryID.Value)))
+				Me.Adapter.InsertCommand.Parameters(2).Value = (CInt(CategoryID.Value))
 			Else
 				Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
 			End If
@@ -1238,17 +1261,17 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 				Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
 			End If
 			If (UnitsInStock.HasValue = True) Then
-				Me.Adapter.InsertCommand.Parameters(5).Value = (CShort(Fix(UnitsInStock.Value)))
+				Me.Adapter.InsertCommand.Parameters(5).Value = (CShort(UnitsInStock.Value))
 			Else
 				Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
 			End If
 			If (UnitsOnOrder.HasValue = True) Then
-				Me.Adapter.InsertCommand.Parameters(6).Value = (CShort(Fix(UnitsOnOrder.Value)))
+				Me.Adapter.InsertCommand.Parameters(6).Value = (CShort(UnitsOnOrder.Value))
 			Else
 				Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
 			End If
 			If (ReorderLevel.HasValue = True) Then
-				Me.Adapter.InsertCommand.Parameters(7).Value = (CShort(Fix(ReorderLevel.Value)))
+				Me.Adapter.InsertCommand.Parameters(7).Value = (CShort(ReorderLevel.Value))
 			Else
 				Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
 			End If
@@ -1272,20 +1295,22 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End Try
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-		Public Overridable Function Update(ByVal ProductName As String, ByVal SupplierID As Global.System.Nullable(Of Integer), ByVal CategoryID As Global.System.Nullable(Of Integer), ByVal QuantityPerUnit As String, ByVal UnitPrice As Global.System.Nullable(Of Decimal), ByVal UnitsInStock As Global.System.Nullable(Of Short), ByVal UnitsOnOrder As Global.System.Nullable(Of Short), ByVal ReorderLevel As Global.System.Nullable(Of Short), ByVal Discontinued As Boolean, ByVal EAN13 As String, ByVal Original_ProductID As Integer, ByVal Original_ProductName As String, ByVal Original_SupplierID As Global.System.Nullable(Of Integer), ByVal Original_CategoryID As Global.System.Nullable(Of Integer), ByVal Original_QuantityPerUnit As String, ByVal Original_UnitPrice As Global.System.Nullable(Of Decimal), ByVal Original_UnitsInStock As Global.System.Nullable(Of Short), ByVal Original_UnitsOnOrder As Global.System.Nullable(Of Short), ByVal Original_ReorderLevel As Global.System.Nullable(Of Short), ByVal Original_Discontinued As Boolean, ByVal Original_EAN13 As String) As Integer
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)>
+		Public Overridable Function Update(ByVal ProductName As String, ByVal SupplierID? As Integer, ByVal CategoryID? As Integer, ByVal QuantityPerUnit As String, ByVal UnitPrice? As Decimal, ByVal UnitsInStock? As Short, ByVal UnitsOnOrder? As Short, ByVal ReorderLevel? As Short, ByVal Discontinued As Boolean, ByVal EAN13 As String, ByVal Original_ProductID As Integer, ByVal Original_ProductName As String, ByVal Original_SupplierID? As Integer, ByVal Original_CategoryID? As Integer, ByVal Original_QuantityPerUnit As String, ByVal Original_UnitPrice? As Decimal, ByVal Original_UnitsInStock? As Short, ByVal Original_UnitsOnOrder? As Short, ByVal Original_ReorderLevel? As Short, ByVal Original_Discontinued As Boolean, ByVal Original_EAN13 As String) As Integer
 			If (ProductName Is Nothing) Then
 				Throw New Global.System.ArgumentNullException("ProductName")
 			Else
 				Me.Adapter.UpdateCommand.Parameters(0).Value = (CStr(ProductName))
 			End If
 			If (SupplierID.HasValue = True) Then
-				Me.Adapter.UpdateCommand.Parameters(1).Value = (CInt(Fix(SupplierID.Value)))
+				Me.Adapter.UpdateCommand.Parameters(1).Value = (CInt(SupplierID.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
 			End If
 			If (CategoryID.HasValue = True) Then
-				Me.Adapter.UpdateCommand.Parameters(2).Value = (CInt(Fix(CategoryID.Value)))
+				Me.Adapter.UpdateCommand.Parameters(2).Value = (CInt(CategoryID.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
 			End If
@@ -1300,17 +1325,17 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 				Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
 			End If
 			If (UnitsInStock.HasValue = True) Then
-				Me.Adapter.UpdateCommand.Parameters(5).Value = (CShort(Fix(UnitsInStock.Value)))
+				Me.Adapter.UpdateCommand.Parameters(5).Value = (CShort(UnitsInStock.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
 			End If
 			If (UnitsOnOrder.HasValue = True) Then
-				Me.Adapter.UpdateCommand.Parameters(6).Value = (CShort(Fix(UnitsOnOrder.Value)))
+				Me.Adapter.UpdateCommand.Parameters(6).Value = (CShort(UnitsOnOrder.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
 			End If
 			If (ReorderLevel.HasValue = True) Then
-				Me.Adapter.UpdateCommand.Parameters(7).Value = (CShort(Fix(ReorderLevel.Value)))
+				Me.Adapter.UpdateCommand.Parameters(7).Value = (CShort(ReorderLevel.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
 			End If
@@ -1320,7 +1345,7 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			Else
 				Me.Adapter.UpdateCommand.Parameters(9).Value = (CStr(EAN13))
 			End If
-			Me.Adapter.UpdateCommand.Parameters(10).Value = (CInt(Fix(Original_ProductID)))
+			Me.Adapter.UpdateCommand.Parameters(10).Value = (CInt(Original_ProductID))
 			If (Original_ProductName Is Nothing) Then
 				Throw New Global.System.ArgumentNullException("Original_ProductName")
 			Else
@@ -1329,14 +1354,14 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End If
 			If (Original_SupplierID.HasValue = True) Then
 				Me.Adapter.UpdateCommand.Parameters(13).Value = (CObj(0))
-				Me.Adapter.UpdateCommand.Parameters(14).Value = (CInt(Fix(Original_SupplierID.Value)))
+				Me.Adapter.UpdateCommand.Parameters(14).Value = (CInt(Original_SupplierID.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(13).Value = (CObj(1))
 				Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
 			End If
 			If (Original_CategoryID.HasValue = True) Then
 				Me.Adapter.UpdateCommand.Parameters(15).Value = (CObj(0))
-				Me.Adapter.UpdateCommand.Parameters(16).Value = (CInt(Fix(Original_CategoryID.Value)))
+				Me.Adapter.UpdateCommand.Parameters(16).Value = (CInt(Original_CategoryID.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(15).Value = (CObj(1))
 				Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
@@ -1357,21 +1382,21 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 			End If
 			If (Original_UnitsInStock.HasValue = True) Then
 				Me.Adapter.UpdateCommand.Parameters(21).Value = (CObj(0))
-				Me.Adapter.UpdateCommand.Parameters(22).Value = (CShort(Fix(Original_UnitsInStock.Value)))
+				Me.Adapter.UpdateCommand.Parameters(22).Value = (CShort(Original_UnitsInStock.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(21).Value = (CObj(1))
 				Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
 			End If
 			If (Original_UnitsOnOrder.HasValue = True) Then
 				Me.Adapter.UpdateCommand.Parameters(23).Value = (CObj(0))
-				Me.Adapter.UpdateCommand.Parameters(24).Value = (CShort(Fix(Original_UnitsOnOrder.Value)))
+				Me.Adapter.UpdateCommand.Parameters(24).Value = (CShort(Original_UnitsOnOrder.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(23).Value = (CObj(1))
 				Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
 			End If
 			If (Original_ReorderLevel.HasValue = True) Then
 				Me.Adapter.UpdateCommand.Parameters(25).Value = (CObj(0))
-				Me.Adapter.UpdateCommand.Parameters(26).Value = (CShort(Fix(Original_ReorderLevel.Value)))
+				Me.Adapter.UpdateCommand.Parameters(26).Value = (CShort(Original_ReorderLevel.Value))
 			Else
 				Me.Adapter.UpdateCommand.Parameters(25).Value = (CObj(1))
 				Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
@@ -1401,5 +1426,4 @@ Namespace DynamicStyleSheet.nwindDataSetTableAdapters
 	End Class
 End Namespace
 
-'INSTANT VB TODO TASK: There is no equivalent to #pragma directives in VB.NET:
-'#pragma warning restore 1591
+#Enable Warning BC1591
